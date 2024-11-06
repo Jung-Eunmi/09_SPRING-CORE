@@ -19,8 +19,7 @@ public class Application {
         System.out.println(member.getPersonalAccount().withDraw(5000));
         System.out.println(member.getPersonalAccount().getBalance());
 
-
-
+        
     }
 
 }
