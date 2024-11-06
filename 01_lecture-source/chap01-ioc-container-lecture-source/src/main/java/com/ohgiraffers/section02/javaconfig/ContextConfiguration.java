@@ -6,8 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /* comment.
 *   @Configuration 어노테이션은 해당 클래스가
-*   bean 을 생성하는 클래스라는 것을 컨테이너에게 알려준다.
-* */
+*   bean 을 생성하는 클래스라는 것을 컨테이너에게 알려준다. */
             // 이름을 붙여줄 수 있음
 @Configuration("configuration02")
 public class ContextConfiguration {
