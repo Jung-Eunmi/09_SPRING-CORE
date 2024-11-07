@@ -16,7 +16,7 @@ public class Application {
         }
 
         AnimalService animalService
-                = context.getBean("qualifierService", AnimalService.class);
+                = context.getBean("collectionService", AnimalService.class);
         
         animalService.animalEat();
 
