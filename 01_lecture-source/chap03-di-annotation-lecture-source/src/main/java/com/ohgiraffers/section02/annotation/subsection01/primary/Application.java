@@ -14,6 +14,14 @@ public class Application {
         for (String been : beanNames){
             System.out.println("been = " + been);
         }
+
+        AnimalService animalService
+                = context.getBean("primaryService", AnimalService.class);
+
+        animalService.animalEat();
+
     }
+
+
 
 }

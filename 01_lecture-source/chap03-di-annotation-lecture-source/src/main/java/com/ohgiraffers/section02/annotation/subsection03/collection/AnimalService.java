@@ -1,4 +1,4 @@
-package com.ohgiraffers.section02.annotation.subsection02.qualifier;
+package com.ohgiraffers.section02.annotation.subsection03.collection;
 
 import com.ohgiraffers.section02.common.Animal;
 import org.springframework.beans.factory.annotation.Autowired;
