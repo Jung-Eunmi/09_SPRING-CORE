@@ -30,6 +30,20 @@ public class Application {
         cart1.addItem(soda);
 
         System.out.println("첫 번째 손님 cart 목록" + cart1.showCart());
+
+        // 두 번째 손님을 위한 쇼핑카트 객체 생성
+        Cart cart2 = context.getBean("cart", Cart.class);
+        cart2.addItem(coke);
+
+        System.out.println("두 번째 손님 cart 목록" + cart2.showCart());
+
+        System.out.println("cart1.hashCode() : " + cart1.hashCode());
+        System.out.println("cart2.hashCode() : " + cart2.hashCode());
+        /* comment.
+        *   cart1, cart2 의 hashCode 가 동일하다.
+        *   Spring 프레임워크에서 Bean(객체) 의 기본 scope 는 Singleton 이다.
+        *   우리가 Bean 으로 등록하게 되면 하나의 인스턴스만 생성하여 공유해서 사용하게된다. */
+
     }
 
 }
