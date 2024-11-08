@@ -6,7 +6,6 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 public class Drink extends Product{
 
     private int capacity;       // 음료수 용량(ml)
@@ -18,6 +17,12 @@ public class Drink extends Product{
     public Drink(String name, int price, int capacity) {
         super(name, price);
         this.capacity = capacity;
+    }
+
+    @Override
+    public String toString() {
+        // 부모의 tostring 메소드 가져오면서 내 필드를 출력 할 수 있는 구문 추가
+        return super.toString() + " " + this.capacity;
     }
 
 }

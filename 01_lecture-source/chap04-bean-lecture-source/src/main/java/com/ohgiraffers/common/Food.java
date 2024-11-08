@@ -13,4 +13,10 @@ public class Food extends Product{
         this.bakedDate = bakedDate;
     }
 
+    @Override
+    public String toString() {
+        // 부모의 tostring 메소드 가져오면서 내 필드를 출력 할 수 있는 구문 추가
+        return super.toString() + " " + this.bakedDate;
+    }
+
 }

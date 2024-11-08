@@ -28,6 +28,8 @@ public class Application {
         Cart cart1 = context.getBean("cart", Cart.class);
         cart1.addItem(kimchi);
         cart1.addItem(soda);
+
+        System.out.println("첫 번째 손님 cart 목록" + cart1.showCart());
     }
 
 }
