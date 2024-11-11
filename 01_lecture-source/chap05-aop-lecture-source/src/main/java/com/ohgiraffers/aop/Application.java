@@ -18,6 +18,8 @@ public class Application {
         System.out.println("================selectMember================");
         System.out.println(memberService.selectMember(1L));
 
+
+
     }
 
 }
